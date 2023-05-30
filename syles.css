@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #222;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-weight: bold;
+    }
+
+    .linkedin-button {
+      display: inline-block;
+      background-color: #0077B5;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .linkedin-button:hover {
+      background-color: #005D93;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About Me</h1>
+    <p class="intro">I'm Pradyumn, a dynamic professional with a unique blend of front-end development expertise and strategic business acumen. Passionate about effective communication and captivating design, I create immersive experiences that drive success in the tech industry.</p>
+    <p>With a strong foundation in front-end development, I possess the technical skills to bring ideas to life. I leverage my understanding of coding languages and frameworks to craft visually appealing and user-friendly interfaces that leave a lasting impact.</p>
+    <p>In addition to my tech skills, I excel in strategic thinking and business-oriented solutions. I analyze market dynamics and user needs, combining design aesthetics with a keen understanding of business goals to develop innovative strategies that drive growth.</p>
+    <p>My strength lies in my exceptional communication skills, enabling me to effectively collaborate with cross-functional teams, present ideas, and build strong relationships with stakeholders. I thrive in dynamic environments and excel at conveying complex concepts in a clear and concise manner.</p>
+    <p>As a teammate, I am reliable, proactive, and highly collaborative. I foster an environment of open communication, valuing diverse perspectives and teamwork. With my combined expertise in front-end development and business strategy, I contribute to the success of projects by creating impactful solutions that meet both user and business requirements.</p>
+    <p>Passionate about the transformative power of technology, I strive to make a meaningful impact in the tech industry through a strategic approach to design and business-driven innovation.</p>
+    <a class="linkedin-button" href="https://www.linkedin.com/in/realpradyumn/" target="_blank">Connect on LinkedIn</a>
+  </div>
+</body>
+</html>
