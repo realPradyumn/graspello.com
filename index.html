@@ -1,316 +1,1781 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- SEO OPTIMISATION -->
-<title>Graspello Enterprises | PVC Copper Wire Supplier India</title>
-
-<meta name="description" content="Graspello Enterprises provides BIS certified PVC insulated copper wires across India. Trusted industrial electrical wiring supplier supporting automation, control panels and OEM manufacturing.">
-
-<meta name="keywords" content="PVC copper wire supplier India, BIS certified wire, electrical wire supplier Delhi, industrial copper wire manufacturer partner, control panel wiring supplier, Graspello Enterprises">
-
-<meta name="author" content="Graspello Enterprises">
-
-<!-- Open Graph SEO -->
-<meta property="og:title" content="Graspello Enterprises">
-<meta property="og:description" content="Certified Electrical Connectivity Solutions">
-<meta property="og:type" content="website">
-
-<link rel="icon" href="logo.png">
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Graspello Enterprises | IS 694 Certified Copper Wire — Authorised Partner for M.M. Traders</title>
+<meta name="description" content="Graspello Enterprises — authorised channel and distribution partner for M.M. Traders. IS 694 licensed, BIS certified OEM manufacturer of PVC insulated copper wires. Delhi, India.">
+<meta property="og:title" content="Graspello Enterprises | Premium Copper Wire Distribution">
+<meta property="og:description" content="IS 694 Licensed · BIS Certified · ISO Compliant · OEM Ready. Direct manufacturer partnership since 1997.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+/* =====================================================
+   RESET & BASE
+===================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--f-body); background: var(--off-white); color: var(--dark); overflow-x: hidden; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
 
-/* GENERAL */
+/* =====================================================
+   CSS VARIABLES
+===================================================== */
+:root {
+  --navy-deep:   #070E1D;
+  --navy:        #0F1B4C;
+  --navy-mid:    #1B2B6B;
+  --navy-light:  #253585;
+  --copper:      #B87333;
+  --copper-lt:   #D4956A;
+  --copper-pale: #F5EDE1;
+  --white:       #FFFFFF;
+  --off-white:   #F5F3EF;
+  --g100:        #EDEBE6;
+  --g200:        #D8D5CE;
+  --g400:        #9CA3AF;
+  --g600:        #6B7280;
+  --dark:        #0D1117;
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-heading: 'Barlow Condensed', sans-serif;
+  --f-body:    'Barlow', sans-serif;
+
+  --ease:     cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+  --sh-sm:     0 2px 8px rgba(0,0,0,.08);
+  --sh-md:     0 8px 32px rgba(0,0,0,.12);
+  --sh-lg:     0 20px 60px rgba(0,0,0,.2);
+  --sh-copper: 0 8px 32px rgba(184,115,51,.3);
 }
 
-body {
-line-height: 1.6;
-color: #333;
-background: #fff;
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s var(--ease-out), transform .7s var(--ease-out);
 }
+.reveal.visible { opacity: 1; transform: none; }
+.rd1 { transition-delay: .1s; }
+.rd2 { transition-delay: .2s; }
+.rd3 { transition-delay: .3s; }
+.rd4 { transition-delay: .4s; }
 
-/* NAVBAR */
+/* =====================================================
+   SHARED UTILITIES
+===================================================== */
+.eyebrow {
+  display: block;
+  font-family: var(--f-heading);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: .75rem;
+}
+.sec-title {
+  font-family: var(--f-heading);
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.sec-title.lt { color: var(--white); }
+.sec-body {
+  font-family: var(--f-body);
+  font-size: .97rem;
+  font-weight: 400;
+  line-height: 1.72;
+  color: var(--g600);
+}
+.sec-body.lt { color: rgba(255,255,255,.7); }
+.copper-bar {
+  display: block;
+  width: 44px;
+  height: 3px;
+  background: var(--copper);
+  margin: 1rem 0 1.6rem;
+}
+.copper-bar.cx { margin: 1rem auto 1.6rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+.sec-hdr { margin-bottom: 3.5rem; }
+.sec-hdr.cx { text-align: center; display: flex; flex-direction: column; align-items: center; }
+section { padding: 6rem 2rem; }
 
+/* =====================================================
+   BUTTONS
+===================================================== */
+.btn-p {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  font-family: var(--f-heading);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--copper);
+  padding: .85rem 1.9rem;
+  border: 2px solid var(--copper);
+  cursor: pointer;
+  transition: background .25s, transform .2s, box-shadow .25s;
+}
+.btn-p:hover { background: var(--copper-lt); border-color: var(--copper-lt); transform: translateY(-2px); box-shadow: var(--sh-copper); }
+.btn-o {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  font-family: var(--f-heading);
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: transparent;
+  padding: .85rem 1.9rem;
+  border: 2px solid rgba(255,255,255,.35);
+  cursor: pointer;
+  transition: border-color .25s, background .25s;
+}
+.btn-o:hover { border-color: var(--copper); background: rgba(184,115,51,.08); }
+.btn-dk {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  font-family: var(--f-heading);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--navy);
+  padding: .85rem 1.9rem;
+  border: 2px solid var(--navy);
+  cursor: pointer;
+  transition: background .25s;
+}
+.btn-dk:hover { background: var(--copper); border-color: var(--copper); }
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
 nav {
-position: fixed;
-width: 100%;
-background: #0a2a4a;
-color: white;
-padding: 15px 50px;
-display: flex;
-justify-content: space-between;
-z-index: 999;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  height: 72px;
+  background: rgba(7,14,29,.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(184,115,51,.18);
+  transition: all .3s var(--ease);
+}
+nav.scrolled {
+  background: rgba(7,14,29,.97);
+  border-bottom-color: rgba(184,115,51,.38);
+  height: 64px;
+}
+.nav-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo img { height: 36px; width: auto; display: block; }
+.nav-logo-text {
+  font-family: var(--f-heading);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.nav-logo-text span { color: var(--copper); }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.nav-links a {
+  font-family: var(--f-heading);
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.78);
+  transition: color .2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: var(--copper);
+  transition: width .3s var(--ease);
+}
+.nav-links a:hover { color: var(--white); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  font-family: var(--f-heading);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--copper);
+  padding: .5rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+.nav-cta:hover { background: var(--copper-lt); transform: translateY(-1px); }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+}
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: all .3s; }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+.mob-menu {
+  display: none;
+  position: fixed;
+  top: 72px; left: 0; right: 0;
+  background: var(--navy-deep);
+  border-top: 1px solid rgba(184,115,51,.3);
+  padding: 2rem;
+  z-index: 999;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.mob-menu.open { display: flex; }
+.mob-menu a {
+  font-family: var(--f-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.82);
+  transition: color .2s;
+}
+.mob-menu a:hover { color: var(--copper); }
+
+/* =====================================================
+   HERO
+===================================================== */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--navy-deep);
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(184,115,51,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,115,51,.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+.hero-radial {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 80% at 45% 55%, rgba(27,43,107,.55) 0%, rgba(7,14,29,.95) 100%);
+}
+.hero-accent {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--copper) 30%, var(--copper) 70%, transparent);
+}
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--f-heading);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 1.6rem;
+  opacity: 0;
+  animation: fadeIn .8s var(--ease-out) .2s forwards;
+}
+.hero-eyebrow::before { content: ''; width: 36px; height: 1px; background: var(--copper); flex-shrink: 0; }
+.hero-h1 {
+  font-family: var(--f-display);
+  font-size: clamp(3.8rem, 10vw, 8.5rem);
+  font-weight: 700;
+  line-height: .96;
+  color: var(--white);
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+}
+.hero-line {
+  display: block;
+  transform: translateY(110%);
+  animation: slideUp .95s var(--ease-out) forwards;
+}
+.hero-line:nth-child(2) { animation-delay: .14s; }
+.hero-line:nth-child(3) { animation-delay: .28s; }
+.hero-h1 .cu { color: var(--copper); font-style: italic; }
+@keyframes slideUp { to { transform: translateY(0); } }
+@keyframes fadeIn  { to { opacity: 1; } }
+
+.hero-sub {
+  font-family: var(--f-body);
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.62);
+  max-width: 560px;
+  line-height: 1.72;
+  margin-bottom: 2.2rem;
+  opacity: 0;
+  animation: fadeIn .8s var(--ease-out) .65s forwards;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeIn .8s var(--ease-out) .8s forwards;
+}
+.badge {
+  font-family: var(--f-heading);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.78);
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(184,115,51,.32);
+  padding: .38rem .9rem;
+}
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeIn .8s var(--ease-out) .95s forwards;
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+  color: rgba(255,255,255,.35);
+  font-family: var(--f-heading);
+  font-size: .6rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 1s var(--ease-out) 1.6s forwards;
+}
+.scroll-bar {
+  width: 1px;
+  height: 44px;
+  background: linear-gradient(to bottom, var(--copper), transparent);
+  animation: scrollPulse 2s ease-in-out 2s infinite;
+}
+@keyframes scrollPulse {
+  0%,100% { opacity: .3; transform: scaleY(.5); transform-origin: top; }
+  50% { opacity: 1; transform: scaleY(1); }
 }
 
-nav h1 {
-font-size: 22px;
+/* =====================================================
+   TRUST STRIP
+===================================================== */
+#trust {
+  background: var(--copper);
+  padding: .75rem 2rem;
+}
+.trust-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.ti {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  font-family: var(--f-heading);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.ti svg { opacity: .9; flex-shrink: 0; }
+.tdiv { width: 1px; height: 18px; background: rgba(255,255,255,.3); }
+
+/* =====================================================
+   ABOUT
+===================================================== */
+#about { background: var(--white); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.about-body { margin-bottom: 1.2rem; }
+.about-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--g200);
+  border: 1px solid var(--g200);
+  margin-top: 2.5rem;
+}
+.af {
+  background: var(--white);
+  padding: 1.1rem 1.4rem;
+  transition: background .25s;
+}
+.af:hover { background: var(--copper-pale); }
+.af-lbl {
+  font-family: var(--f-heading);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: .3rem;
+}
+.af-val {
+  font-family: var(--f-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.about-visual {
+  background: var(--navy);
+  aspect-ratio: 4/5;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem;
+}
+.av-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(184,115,51,.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,115,51,.09) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.av-glow {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 75%, rgba(27,43,107,.85), transparent 65%);
+}
+.av-accent {
+  position: absolute;
+  top: 0; right: 0;
+  width: 56px; height: 112px;
+  background: var(--copper);
+}
+.av-content { position: relative; z-index: 1; }
+.av-num {
+  font-family: var(--f-display);
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: var(--copper);
+  line-height: 1;
+  margin-bottom: .4rem;
+}
+.av-lbl {
+  font-family: var(--f-heading);
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.85);
+  margin-bottom: 1.2rem;
+}
+.av-divider { width: 36px; height: 2px; background: var(--copper); margin-bottom: 1rem; }
+.av-note {
+  font-family: var(--f-body);
+  font-size: .82rem;
+  line-height: 1.62;
+  color: rgba(255,255,255,.5);
 }
 
-nav ul {
-display: flex;
-list-style: none;
+/* =====================================================
+   PRODUCTS
+===================================================== */
+#products { background: var(--off-white); }
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.prod-card {
+  background: var(--white);
+  padding: 2rem;
+  border: 1px solid var(--g200);
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s;
+  cursor: pointer;
+}
+.prod-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 3px;
+  background: var(--copper);
+  transition: width .4s var(--ease);
+}
+.prod-card:hover { transform: translateY(-5px); box-shadow: var(--sh-md); border-color: rgba(184,115,51,.4); }
+.prod-card:hover::after { width: 100%; }
+.prod-icon {
+  width: 46px; height: 46px;
+  background: var(--copper-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  color: var(--copper);
+  transition: background .3s;
+}
+.prod-card:hover .prod-icon { background: var(--copper); color: var(--white); }
+.prod-name {
+  font-family: var(--f-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: .7rem;
+}
+.prod-desc {
+  font-family: var(--f-body);
+  font-size: .88rem;
+  line-height: 1.62;
+  color: var(--g600);
+  margin-bottom: 1.5rem;
+}
+.prod-link {
+  font-family: var(--f-heading);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--copper);
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+}
+.prod-link svg { transition: transform .2s; }
+.prod-card:hover .prod-link svg { transform: translateX(4px); }
+
+/* =====================================================
+   STATS
+===================================================== */
+#stats { background: var(--navy); padding: 5rem 2rem; }
+.stats-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,.08);
+}
+.stat-cell {
+  background: var(--navy);
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: background .3s;
+}
+.stat-cell:hover { background: var(--navy-light); }
+.stat-n {
+  font-family: var(--f-display);
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  font-weight: 700;
+  color: var(--copper);
+  line-height: 1;
+  display: block;
+  margin-bottom: .5rem;
+}
+.stat-l {
+  font-family: var(--f-heading);
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.62);
 }
 
-nav ul li {
-margin-left: 25px;
-cursor: pointer;
+/* =====================================================
+   WHY CHOOSE US
+===================================================== */
+#why { background: var(--white); }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.why-item { position: relative; }
+.why-icon {
+  width: 50px; height: 50px;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  transition: background .3s, transform .3s;
+}
+.why-item:hover .why-icon { background: var(--copper); transform: translateY(-3px); }
+.why-title {
+  font-family: var(--f-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: .7rem;
+}
+.why-text { font-family: var(--f-body); font-size: .88rem; line-height: 1.65; color: var(--g600); }
+
+/* =====================================================
+   OEM SECTION
+===================================================== */
+#oem {
+  background: var(--navy-deep);
+  padding: 7rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.oem-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(184,115,51,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,115,51,.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+.oem-wrap {
+  position: relative; z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.oem-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
+.oem-tag {
+  font-family: var(--f-heading);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.65);
+  border: 1px solid rgba(184,115,51,.38);
+  padding: .32rem .8rem;
+}
+.oem-brands-lbl {
+  font-family: var(--f-heading);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: .75rem;
+  margin-top: 2.5rem;
+}
+.oem-chips { display: flex; gap: .8rem; flex-wrap: wrap; }
+.oem-chip {
+  font-family: var(--f-heading);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--white);
+  background: rgba(184,115,51,.14);
+  border: 1px solid rgba(184,115,51,.3);
+  padding: .38rem 1rem;
+  transition: background .25s;
+}
+.oem-chip:hover { background: rgba(184,115,51,.3); }
+.oem-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(184,115,51,.18);
+}
+.oem-feat {
+  background: rgba(255,255,255,.03);
+  padding: 1.5rem;
+  transition: background .3s;
+}
+.oem-feat:hover { background: rgba(184,115,51,.09); }
+.oem-feat-ic { color: var(--copper); margin-bottom: .7rem; }
+.oem-feat-title {
+  font-family: var(--f-heading);
+  font-size: .88rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: .4rem;
+}
+.oem-feat-txt { font-family: var(--f-body); font-size: .8rem; line-height: 1.5; color: rgba(255,255,255,.5); }
+
+/* =====================================================
+   INDUSTRIES
+===================================================== */
+#industries { background: var(--off-white); }
+.ind-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.ind-item {
+  background: var(--white);
+  padding: 1.8rem 1.4rem;
+  text-align: center;
+  border: 1px solid var(--g200);
+  transition: background .3s, border-color .3s, transform .3s;
+  cursor: default;
+}
+.ind-item:hover { background: var(--navy); border-color: var(--navy); transform: translateY(-4px); }
+.ind-ic {
+  width: 42px; height: 42px;
+  margin: 0 auto .9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--copper);
+  transition: color .3s;
+}
+.ind-item:hover .ind-ic { color: var(--copper-lt); }
+.ind-name {
+  font-family: var(--f-heading);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  transition: color .3s;
+  line-height: 1.3;
+}
+.ind-item:hover .ind-name { color: var(--white); }
+
+/* =====================================================
+   QUALITY
+===================================================== */
+#quality { background: var(--navy-mid); padding: 6rem 2rem; }
+.qual-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 5rem;
+  align-items: start;
+}
+.cert-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.cert-b {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(184,115,51,.38);
+  padding: 1.4rem 1.1rem;
+  text-align: center;
+  transition: background .3s, border-color .3s;
+}
+.cert-b:hover { background: rgba(184,115,51,.1); border-color: var(--copper); }
+.cert-tag {
+  font-family: var(--f-heading);
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: .45rem;
+}
+.cert-val {
+  font-family: var(--f-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.cert-sub { font-family: var(--f-body); font-size: .7rem; color: rgba(255,255,255,.48); margin-top: .25rem; }
+.qual-pts {}
+.qp {
+  display: flex;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.qp:last-child { border-bottom: none; }
+.qp-dot { width: 8px; height: 8px; background: var(--copper); flex-shrink: 0; margin-top: .45rem; }
+.qp-body { font-family: var(--f-body); font-size: .9rem; line-height: 1.62; color: rgba(255,255,255,.72); }
+.qp-body strong {
+  display: block;
+  font-family: var(--f-heading);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: .2rem;
 }
 
-/* HERO */
-
-.hero {
-height: 100vh;
-background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1581091870627-3b4f0d7b2d6a');
-background-size: cover;
-color: white;
-display: flex;
-align-items: center;
-padding: 0 50px;
+/* =====================================================
+   CONTACT
+===================================================== */
+#contact { background: var(--white); }
+.cont-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 5rem;
+  align-items: start;
 }
-
-.hero h2 {
-font-size: 42px;
-margin-bottom: 20px;
+.cont-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
 }
-
-.hero p {
-max-width: 600px;
+.cont-ic {
+  width: 40px; height: 40px;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--copper);
 }
-
-/* SECTION */
-
-section {
-padding: 80px 50px;
+.cont-lbl {
+  font-family: var(--f-heading);
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: .22rem;
 }
-
-section h2 {
-color: #0a2a4a;
-margin-bottom: 20px;
+.cont-val { font-family: var(--f-body); font-size: .9rem; color: var(--dark); line-height: 1.5; }
+.note-box {
+  background: var(--off-white);
+  border-left: 3px solid var(--copper);
+  padding: 1.2rem 1.4rem;
+  margin-top: 2rem;
 }
-
-/* GRID */
-
-.grid {
-display: grid;
-grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-gap: 25px;
+.note-lbl {
+  font-family: var(--f-heading);
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: .4rem;
 }
-
-.card {
-background: #f5f7fa;
-padding: 20px;
-border-radius: 8px;
-transition: 0.3s;
+.note-txt { font-family: var(--f-body); font-size: .85rem; line-height: 1.62; color: var(--g600); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+.fg { margin-bottom: 1rem; }
+.fg label {
+  display: block;
+  font-family: var(--f-heading);
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--navy-mid);
+  margin-bottom: .45rem;
 }
-
-.card:hover {
-transform: translateY(-5px);
+.fg input, .fg select, .fg textarea {
+  width: 100%;
+  font-family: var(--f-body);
+  font-size: .9rem;
+  color: var(--dark);
+  background: var(--off-white);
+  border: 1px solid var(--g200);
+  padding: .75rem 1rem;
+  outline: none;
+  transition: border-color .25s, background .25s;
+  -webkit-appearance: none; appearance: none;
 }
-
-/* CONTACT */
-
-.contact-box {
-background: #f1f1f1;
-padding: 25px;
-border-radius: 8px;
+.fg input:focus, .fg select:focus, .fg textarea:focus {
+  border-color: var(--copper);
+  background: var(--white);
 }
-
-input, textarea {
-width: 100%;
-padding: 10px;
-margin-top: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
+.fg textarea { resize: vertical; min-height: 120px; }
+.btn-submit {
+  width: 100%;
+  font-family: var(--f-heading);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--navy);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background .25s;
+  margin-top: .5rem;
 }
+.btn-submit:hover { background: var(--copper); }
 
-button {
-background: #0a2a4a;
-color: white;
-padding: 12px 20px;
-border: none;
-margin-top: 15px;
-cursor: pointer;
-}
-
-/* FOOTER */
-
+/* =====================================================
+   FOOTER
+===================================================== */
 footer {
-background: #0a2a4a;
-color: white;
-padding: 20px;
-text-align: center;
+  background: var(--navy-deep);
+  padding: 4rem 2rem 2rem;
+  border-top: 1px solid rgba(184,115,51,.28);
+}
+.foot-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.foot-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.foot-brand img { height: 34px; margin-bottom: 1rem; }
+.foot-brand-name {
+  font-family: var(--f-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.foot-brand-name span { color: var(--copper); }
+.foot-brand p {
+  font-family: var(--f-body);
+  font-size: .82rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.45);
+  max-width: 240px;
+}
+.foot-col-ttl {
+  font-family: var(--f-heading);
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 1rem;
+}
+.foot-links { display: flex; flex-direction: column; gap: .55rem; }
+.foot-links a {
+  font-family: var(--f-body);
+  font-size: .82rem;
+  color: rgba(255,255,255,.5);
+  transition: color .2s;
+}
+.foot-links a:hover { color: var(--copper); }
+.foot-ci { font-family: var(--f-body); font-size: .8rem; color: rgba(255,255,255,.5); margin-bottom: .45rem; line-height: 1.5; }
+.foot-ci a { color: var(--copper-lt); transition: color .2s; }
+.foot-ci a:hover { color: var(--copper); }
+.foot-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.foot-copy { font-family: var(--f-body); font-size: .75rem; color: rgba(255,255,255,.3); }
+.foot-creds {
+  font-family: var(--f-heading);
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.28);
 }
 
-/* WHATSAPP BUTTON */
-
-.whatsapp {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #25d366;
-color: white;
-padding: 15px;
-border-radius: 50%;
-font-size: 22px;
-cursor: pointer;
-z-index: 999;
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 1024px) {
+  .prod-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .oem-wrap { grid-template-columns: 1fr; gap: 3rem; }
+  .ind-grid { grid-template-columns: repeat(3, 1fr); }
+  .qual-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .foot-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
-
+@media (max-width: 768px) {
+  nav { padding: 0; }
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .nav-wrap { padding: 0 1.25rem; }
+  section { padding: 4rem 1.25rem; }
+  #hero { padding: 0 1.25rem; }
+  #trust { padding: .75rem 1.25rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .about-visual { order: -1; aspect-ratio: 16/9; }
+  .prod-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .why-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .ind-grid { grid-template-columns: repeat(2, 1fr); }
+  .cont-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .foot-top { grid-template-columns: 1fr; }
+  .foot-bottom { flex-direction: column; align-items: flex-start; }
+  .trust-inner { gap: 1.2rem; }
+  .tdiv { display: none; }
+  .hero-h1 { font-size: clamp(2.8rem, 12vw, 5rem); }
+}
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .cert-badges { grid-template-columns: 1fr; }
+  .oem-features { grid-template-columns: 1fr; }
+  .ind-grid { grid-template-columns: 1fr 1fr; }
+  .hero-badges { gap: .4rem; }
+}
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-<h1>Graspello</h1>
-<ul>
-<li onclick="scrollToSection('about')">About</li>
-<li onclick="scrollToSection('products')">Products</li>
-<li onclick="scrollToSection('manufacturing')">Manufacturing</li>
-<li onclick="scrollToSection('industries')">Industries</li>
-<li onclick="scrollToSection('contact')">Contact</li>
-</ul>
+<!-- ====================================================
+     NAVIGATION
+==================================================== -->
+<nav id="navbar">
+  <div class="nav-wrap">
+    <a href="#" class="nav-logo">
+      <!-- Replace with: <img src="logo.png" alt="Graspello Enterprises"> -->
+      <div class="nav-logo-text"><span>G.</span> Graspello</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#oem">OEM Services</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#quality">Quality</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO -->
-<div class="hero">
-<div>
-<h2>Certified Electrical Connectivity Solutions</h2>
-<p>Graspello Enterprises delivers BIS compliant PVC insulated copper wires backed by certified manufacturing infrastructure and reliable industrial supply capability.</p>
-</div>
+<div class="mob-menu" id="mobMenu">
+  <a href="#products" onclick="closeMob()">Products</a>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#oem" onclick="closeMob()">OEM Services</a>
+  <a href="#industries" onclick="closeMob()">Industries</a>
+  <a href="#quality" onclick="closeMob()">Quality</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+  <a href="#contact" class="btn-p" onclick="closeMob()" style="justify-content:center;margin-top:.5rem;">Get a Quote</a>
 </div>
 
-<!-- ABOUT -->
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-radial"></div>
+  <div class="hero-accent"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Authorised Channel &amp; Distribution Partner</div>
+    <h1 class="hero-h1">
+      <span class="hero-line">Copper Wires</span>
+      <span class="hero-line"><em class="cu">Built</em> to</span>
+      <span class="hero-line">Perform.</span>
+    </h1>
+    <p class="hero-sub">
+      Graspello Enterprises — authorised partner for M.M. Traders. IS 694 licensed, BIS certified OEM manufacturer of PVC insulated copper wires, serving industrial buyers since 1997.
+    </p>
+    <div class="hero-badges">
+      <span class="badge">IS 694 Licensed</span>
+      <span class="badge">BIS No. 8700194217</span>
+      <span class="badge">ISO Certified</span>
+      <span class="badge">OEM Ready</span>
+      <span class="badge">Since 1997</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-p">
+        Request a Quote
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#products" class="btn-o">
+        View Products
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-bar"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ====================================================
+     TRUST STRIP
+==================================================== -->
+<div id="trust">
+  <div class="trust-inner">
+    <div class="ti">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+      IS 694 Licensed
+    </div>
+    <div class="tdiv"></div>
+    <div class="ti">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+      BIS License 8700194217
+    </div>
+    <div class="tdiv"></div>
+    <div class="ti">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Manufacturing Since 1997
+    </div>
+    <div class="tdiv"></div>
+    <div class="ti">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      ISO Certified QMS
+    </div>
+    <div class="tdiv"></div>
+    <div class="ti">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Delhi, India
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     ABOUT
+==================================================== -->
 <section id="about">
-<h2>About Graspello</h2>
-<p>Graspello Enterprises is a market-driven electrical solutions company specialising in the distribution and marketing of high-quality PVC insulated copper wires and electrical connectivity products.</p>
+  <div class="container">
+    <div class="about-grid">
 
-<p>Our focus is to bridge certified manufacturing excellence with reliable market access, ensuring industrial customers receive performance-driven, compliant electrical products supported by responsive service and supply chain reliability.</p>
+      <div>
+        <span class="eyebrow reveal">About Graspello Enterprises</span>
+        <h2 class="sec-title reveal rd1">Your Direct Link to Manufacturing Excellence</h2>
+        <span class="copper-bar reveal rd2"></span>
+        <p class="sec-body about-body reveal rd2">
+          Graspello Enterprises is the authorised channel and distribution partner for M.M. Traders — a BIS licensed, IS 694 compliant OEM manufacturer of PVC insulated copper wires operating from Jhilmil Industrial Area, Delhi since 1997.
+        </p>
+        <p class="sec-body reveal rd3">
+          We handle all commercial and business coordination, giving our customers a single, responsive point of contact — backed by a manufacturer with over 25 years of consistent quality, certified compliance and proven industrial reliability.
+        </p>
+        <div class="about-facts reveal rd3">
+          <div class="af"><div class="af-lbl">Established</div><div class="af-val">1997</div></div>
+          <div class="af"><div class="af-lbl">BIS License No.</div><div class="af-val">8700194217</div></div>
+          <div class="af"><div class="af-lbl">Product Standard</div><div class="af-val">IS 694</div></div>
+          <div class="af"><div class="af-lbl">Facility</div><div class="af-val">Delhi – 110095</div></div>
+        </div>
+      </div>
+
+      <div class="reveal rd2">
+        <div class="about-visual">
+          <div class="av-grid"></div>
+          <div class="av-glow"></div>
+          <div class="av-accent"></div>
+          <div class="av-content">
+            <div class="av-num">25<sup style="font-size:2.5rem;vertical-align:top;margin-top:.8rem">+</sup></div>
+            <div class="av-lbl">Years of Manufacturing Excellence</div>
+            <div class="av-divider"></div>
+            <div class="av-note">M.M. Traders — BIS Licensed OEM Manufacturer. Served exclusively by Graspello Enterprises as authorised channel & distribution partner.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- PRODUCTS -->
+<!-- ====================================================
+     PRODUCTS
+==================================================== -->
 <section id="products">
-<h2>Product Overview</h2>
+  <div class="container">
+    <div class="sec-hdr cx">
+      <span class="eyebrow reveal">Product Portfolio</span>
+      <h2 class="sec-title reveal rd1">IS 694 Certified Wire Range</h2>
+      <span class="copper-bar cx reveal rd1"></span>
+      <p class="sec-body reveal rd2" style="max-width:540px;">All products manufactured to IS 694 standards, BIS licensed, backed by in-house testing for electrical performance and dimensional accuracy.</p>
+    </div>
 
-<div class="grid">
+    <div class="prod-grid">
 
-<div class="card">
-<h3>PVC Insulated Copper Wires</h3>
-<p>Industrial and electrical wiring solutions designed for automation, control panels, machinery and infrastructure applications.</p>
-</div>
+      <div class="prod-card reveal">
+        <div class="prod-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg>
+        </div>
+        <div class="prod-name">PVC Insulated Copper Wires</div>
+        <p class="prod-desc">Core product range — IS 694 compliant, high-grade copper conductor with PVC insulation. Voltage grade up to 1100V. Multiple sizes, conductor cross-sections and colours available.</p>
+        <a href="#contact" class="prod-link">Enquire Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
 
-<div class="card">
-<h3>Size Range</h3>
-<p>Available from 1 sq mm to 50 sq mm supporting diverse industrial electrical connectivity needs.</p>
-</div>
+      <div class="prod-card reveal rd1">
+        <div class="prod-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><path d="M4 4h1a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2 2 2 0 0 1 2 2v6"/><path d="M20 4h-1a2 2 0 0 0-2 2v2a2 2 0 0 1-2 2 2 2 0 0 0-2 2v6"/></svg>
+        </div>
+        <div class="prod-name">Single Core Wires</div>
+        <p class="prod-desc">Single core copper wires for fixed wiring in industrial panels, switchboards and electrical installations. Available from 1 sq mm to 10 sq mm and above, full colour range.</p>
+        <a href="#contact" class="prod-link">Enquire Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
 
-<div class="card">
-<h3>Industrial Applications</h3>
-<p>Used in panel wiring, automation systems, OEM manufacturing and electrical distribution systems.</p>
-</div>
+      <div class="prod-card reveal rd2">
+        <div class="prod-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/></svg>
+        </div>
+        <div class="prod-name">Multicore Wires</div>
+        <p class="prod-desc">Multicore PVC insulated copper wires for complex wiring, control panels and industrial equipment. Custom core count configurations available on request.</p>
+        <a href="#contact" class="prod-link">Enquire Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
 
-</div>
+      <div class="prod-card reveal rd1">
+        <div class="prod-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-1.7 4-3 7.5-3 10a3 3 0 0 0 6 0c0-2.5-1.3-6-3-10z"/><path d="M8 13c-1.5.8-2.5 2.2-2.5 4a6.5 6.5 0 0 0 13 0c0-1.8-1-3.2-2.5-4"/></svg>
+        </div>
+        <div class="prod-name">FR Wires</div>
+        <p class="prod-desc">Flame Retardant (FR) wires with enhanced fire resistance. Suitable for applications requiring compliance with fire safety standards in industrial and commercial installations.</p>
+        <a href="#contact" class="prod-link">Enquire Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
 
-<p style="margin-top:25px;">For complete product specifications and technical details, please contact our sales team.</p>
+      <div class="prod-card reveal rd2">
+        <div class="prod-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <div class="prod-name">FRLS Wires</div>
+        <p class="prod-desc">Flame Retardant Low Smoke (FRLS) wires — significantly reduced toxic smoke emission during fire conditions. Specified for hospitals, data centres, public infrastructure and high-occupancy buildings.</p>
+        <a href="#contact" class="prod-link">Enquire Now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
 
+      <div class="prod-card reveal rd3">
+        <div class="prod-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="prod-name">OEM Manufacturing</div>
+        <p class="prod-desc">Custom manufacturing under your brand. BIS licensed production, private label programs, custom packaging and printing. Active brand partners: Divon, Extol Cab, Polykunj.</p>
+        <a href="#oem" class="prod-link">Learn More <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- MANUFACTURING -->
-<section id="manufacturing">
-<h2>Manufacturing & Quality</h2>
-
-<p>All products marketed by Graspello Enterprises are manufactured through BIS licensed manufacturing infrastructure operated by MM Traders.</p>
-
-<div class="grid">
-
-<div class="card">
-<h3>BIS Licensed Facility</h3>
-<p>Certified production infrastructure ensuring regulatory compliance and consistent quality standards.</p>
-</div>
-
-<div class="card">
-<h3>Quality Assurance</h3>
-<p>Structured testing processes including raw material verification, in-process inspection and finished product testing.</p>
-</div>
-
-<div class="card">
-<h3>Traceability</h3>
-<p>Batch control systems ensuring complete manufacturing transparency and reliability.</p>
-</div>
-
-</div>
+<!-- ====================================================
+     STATS
+==================================================== -->
+<section id="stats" style="padding:0;">
+  <div class="stats-grid">
+    <div class="stat-cell reveal">
+      <span class="stat-n"><span class="counter" data-target="25">0</span>+</span>
+      <span class="stat-l">Years Manufacturing</span>
+    </div>
+    <div class="stat-cell reveal rd1">
+      <span class="stat-n"><span class="counter" data-target="3">0</span></span>
+      <span class="stat-l">Active OEM Brands</span>
+    </div>
+    <div class="stat-cell reveal rd2">
+      <span class="stat-n"><span class="counter" data-target="1100">0</span>V</span>
+      <span class="stat-l">Max Voltage Grade</span>
+    </div>
+    <div class="stat-cell reveal rd3">
+      <span class="stat-n">IS&nbsp;<span class="counter" data-target="694">0</span></span>
+      <span class="stat-l">Compliance Standard</span>
+    </div>
+  </div>
 </section>
 
-<!-- INDUSTRIES -->
+<!-- ====================================================
+     WHY CHOOSE US
+==================================================== -->
+<section id="why">
+  <div class="container">
+    <div class="sec-hdr cx">
+      <span class="eyebrow reveal">Why M.M. Traders via Graspello</span>
+      <h2 class="sec-title reveal rd1">The Trusted Choice for Industrial Wire</h2>
+      <span class="copper-bar cx reveal rd1"></span>
+    </div>
+    <div class="why-grid">
+
+      <div class="why-item reveal">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div class="why-title">BIS Licensed Manufacturer</div>
+        <p class="why-text">BIS License No. 8700194217 under IS 694. Every batch manufactured and tested to Bureau of Indian Standards requirements — not just claimed, but certified and documented.</p>
+      </div>
+
+      <div class="why-item reveal rd1">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="why-title">ISO Certified Quality System</div>
+        <p class="why-text">Full ISO certified quality management system. Lot-wise traceability, in-process monitoring and finished product testing as standard practice on every production run, without exception.</p>
+      </div>
+
+      <div class="why-item reveal rd2">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="why-title">Consistent Batch Quality</div>
+        <p class="why-text">25+ years of manufacturing experience means product consistency you can depend on. Each batch meets the same standards — critical for OEM programs and recurring industrial procurement.</p>
+      </div>
+
+      <div class="why-item reveal rd1">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="why-title">OEM &amp; Private Label Ready</div>
+        <p class="why-text">Full OEM manufacturing capability. Products manufactured under your brand name with custom packaging and printing — same BIS licensed production, your label, your brand identity.</p>
+      </div>
+
+      <div class="why-item reveal rd2">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="why-title">Manufacturer-Direct Pricing</div>
+        <p class="why-text">Bypass brand premiums without sacrificing quality or compliance. Manufacturer-direct economics through Graspello Enterprises — your authorised commercial contact for all procurement.</p>
+      </div>
+
+      <div class="why-item reveal rd3">
+        <div class="why-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="why-title">Dedicated Commercial Support</div>
+        <p class="why-text">Graspello Enterprises handles all business development, vendor registrations, enquiries and coordination — a single responsive partner, so you spend less time on admin and more on business.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     OEM SECTION
+==================================================== -->
+<section id="oem">
+  <div class="oem-bg"></div>
+  <div class="oem-wrap">
+
+    <div>
+      <span class="eyebrow reveal">OEM &amp; Private Label</span>
+      <h2 class="sec-title lt reveal rd1">Your Brand.<br>Our Manufacturing.</h2>
+      <span class="copper-bar reveal rd1"></span>
+      <p class="sec-body lt reveal rd2">
+        M.M. Traders provides full OEM and private label manufacturing capability. Products manufactured under your brand name — with the same BIS licensed, ISO certified quality process behind every coil, every batch.
+      </p>
+      <div class="oem-tags reveal rd2">
+        <span class="oem-tag">Customer Brand Manufacturing</span>
+        <span class="oem-tag">Distributor Brand Programs</span>
+        <span class="oem-tag">Custom Packaging</span>
+        <span class="oem-tag">Custom Printing</span>
+        <span class="oem-tag">Flexible Volumes</span>
+        <span class="oem-tag">Full BIS Compliance</span>
+        <span class="oem-tag">Project-Specific Production</span>
+      </div>
+      <div class="oem-brands-lbl reveal rd3">Current OEM Brand Partners</div>
+      <div class="oem-chips reveal rd3">
+        <span class="oem-chip">Divon</span>
+        <span class="oem-chip">Extol Cab</span>
+        <span class="oem-chip">Polykunj</span>
+      </div>
+      <div style="margin-top:2.5rem;" class="reveal rd3">
+        <a href="#contact" class="btn-p">Discuss OEM Requirements</a>
+      </div>
+    </div>
+
+    <div class="oem-features reveal rd2">
+      <div class="oem-feat">
+        <div class="oem-feat-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="oem-feat-title">BIS License Maintained</div>
+        <p class="oem-feat-txt">All OEM products manufactured under BIS License No. 8700194217 — full IS 694 compliance, regardless of which brand is on the packaging.</p>
+      </div>
+      <div class="oem-feat">
+        <div class="oem-feat-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <div class="oem-feat-title">Identical Quality Standard</div>
+        <p class="oem-feat-txt">OEM products follow the same manufacturing, testing and QA processes as core production — no different line, no different standard.</p>
+      </div>
+      <div class="oem-feat">
+        <div class="oem-feat-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <div class="oem-feat-title">Custom Packaging</div>
+        <p class="oem-feat-txt">Branded packaging, custom label printing and retail-ready packaging available for distributor and OEM brand programs.</p>
+      </div>
+      <div class="oem-feat">
+        <div class="oem-feat-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="oem-feat-title">Flexible Production</div>
+        <p class="oem-feat-txt">From project-specific single runs to ongoing recurring supply — production scaled to your commercial volume requirements.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     INDUSTRIES
+==================================================== -->
 <section id="industries">
-<h2>Industries We Serve</h2>
-
-<div class="grid">
-
-<div class="card">Electrical Panel Manufacturers</div>
-<div class="card">Industrial Automation Companies</div>
-<div class="card">Automotive Component Manufacturers</div>
-<div class="card">Machinery & Equipment Builders</div>
-<div class="card">Infrastructure & Construction</div>
-<div class="card">OEM Manufacturing Units</div>
-
-</div>
-
+  <div class="container">
+    <div class="sec-hdr cx">
+      <span class="eyebrow reveal">Sectors We Serve</span>
+      <h2 class="sec-title reveal rd1">Industries Served</h2>
+      <span class="copper-bar cx reveal rd1"></span>
+    </div>
+    <div class="ind-grid">
+      <div class="ind-item reveal">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></div>
+        <div class="ind-name">Control Panel Manufacturers</div>
+      </div>
+      <div class="ind-item reveal rd1">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="ind-name">Industrial Automation</div>
+      </div>
+      <div class="ind-item reveal rd2">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <div class="ind-name">OEM Manufacturers</div>
+      </div>
+      <div class="ind-item reveal rd3">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.6 2.7a10 10 0 1 0 5.7 5.7"/><circle cx="12" cy="12" r="2"/><path d="M13.4 10.6 19 5"/></svg></div>
+        <div class="ind-name">Auto Component Manufacturers</div>
+      </div>
+      <div class="ind-item reveal">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="ind-name">Electrical Distributors</div>
+      </div>
+      <div class="ind-item reveal rd1">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="ind-name">Electrical Contractors</div>
+      </div>
+      <div class="ind-item reveal rd2">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+        <div class="ind-name">Infrastructure Projects</div>
+      </div>
+      <div class="ind-item reveal rd3">
+        <div class="ind-ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <div class="ind-name">Machinery Manufacturers</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ====================================================
+     QUALITY
+==================================================== -->
+<section id="quality">
+  <div class="qual-grid">
+
+    <div>
+      <span class="eyebrow reveal" style="color:var(--copper-lt);">Quality &amp; Compliance</span>
+      <h2 class="sec-title lt reveal rd1">Certified.<br>Tested.<br>Traceable.</h2>
+      <span class="copper-bar reveal rd1"></span>
+      <p class="sec-body lt reveal rd2">Quality is integrated at every manufacturing stage — from raw material sourcing through to dispatch.</p>
+
+      <div class="cert-badges reveal rd2">
+        <div class="cert-b">
+          <div class="cert-tag">BIS License</div>
+          <div class="cert-val">8700194217</div>
+          <div class="cert-sub">IS 694 — PVC Insulated Cables</div>
+        </div>
+        <div class="cert-b">
+          <div class="cert-tag">Quality System</div>
+          <div class="cert-val">ISO QMS</div>
+          <div class="cert-sub">Certified Quality Management</div>
+        </div>
+        <div class="cert-b">
+          <div class="cert-tag">Voltage Grade</div>
+          <div class="cert-val">1100V</div>
+          <div class="cert-sub">Maximum rated grade</div>
+        </div>
+        <div class="cert-b">
+          <div class="cert-tag">Conductor</div>
+          <div class="cert-val">Copper</div>
+          <div class="cert-sub">High-grade, quality-controlled</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qual-pts reveal rd2">
+      <div class="qp">
+        <div class="qp-dot"></div>
+        <div class="qp-body"><strong>Raw Material Inspection</strong>High-grade copper conductors from quality-controlled suppliers. Each incoming lot is inspected before entering production — no exceptions to raw material standards.</div>
+      </div>
+      <div class="qp">
+        <div class="qp-dot"></div>
+        <div class="qp-body"><strong>In-Process Quality Monitoring</strong>Continuous monitoring throughout production — electrical performance, dimensional accuracy and insulation quality verified at each manufacturing stage.</div>
+      </div>
+      <div class="qp">
+        <div class="qp-dot"></div>
+        <div class="qp-body"><strong>In-House Testing Capabilities</strong>Conductor resistance testing, high voltage testing, insulation resistance, spark testing and dimensional verification — all in-house, per BIS prescribed requirements.</div>
+      </div>
+      <div class="qp">
+        <div class="qp-dot"></div>
+        <div class="qp-body"><strong>Batch-Level Traceability</strong>Every production lot is tracked from raw material through to finished product. Full traceability maintained for compliance documentation and customer assurance.</div>
+      </div>
+      <div class="qp">
+        <div class="qp-dot"></div>
+        <div class="qp-body"><strong>Pre-Dispatch Quality Checks</strong>Final inspection before dispatch ensures only compliant, tested product leaves the facility. Quality is verified, not assumed.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     CONTACT
+==================================================== -->
 <section id="contact">
-<h2>Contact Us</h2>
+  <div class="container">
+    <div class="sec-hdr cx">
+      <span class="eyebrow reveal">Contact Graspello Enterprises</span>
+      <h2 class="sec-title reveal rd1">Request a Quote or Enquire</h2>
+      <span class="copper-bar cx reveal rd1"></span>
+    </div>
 
-<div class="contact-box">
+    <div class="cont-grid">
 
-<p><b>Address:</b> B-35/3, Jhilmil Industrial Area, Shahdara, Delhi – 110095</p>
-<p><b>Phone:</b> 8882847378</p>
-<p><b>Email:</b> <a href="mailto:contact@graspello.com">contact@graspello.com</a></p>
+      <div class="reveal">
+        <div class="cont-detail">
+          <div class="cont-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l1.08-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="cont-lbl">Phone</div><div class="cont-val">+91 8882847378</div></div>
+        </div>
+        <div class="cont-detail">
+          <div class="cont-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="cont-lbl">Email</div><div class="cont-val">contact@graspello.com</div></div>
+        </div>
+        <div class="cont-detail">
+          <div class="cont-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="cont-lbl">Manufacturing Facility</div><div class="cont-val">B-35/3, Jhilmil Industrial Area,<br>Shahdara, Delhi – 110095</div></div>
+        </div>
+        <div class="cont-detail">
+          <div class="cont-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div><div class="cont-lbl">Website</div><div class="cont-val">www.graspello.com</div></div>
+        </div>
+        <div class="note-box">
+          <div class="note-lbl">Important Note</div>
+          <p class="note-txt">All commercial enquiries, vendor registrations, OEM programs and product queries are managed by Graspello Enterprises — the authorised channel & distribution partner for M.M. Traders.</p>
+        </div>
+      </div>
 
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message" rows="5" required></textarea>
-<button type="submit">Send Message</button>
-</form>
+      <div class="reveal rd1">
+        <form id="enquiryForm">
+          <div class="form-row">
+            <div class="fg"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
+            <div class="fg"><label for="company">Company Name</label><input type="text" id="company" name="company" placeholder="Your company"></div>
+          </div>
+          <div class="form-row">
+            <div class="fg"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="you@company.com" required></div>
+            <div class="fg"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX"></div>
+          </div>
+          <div class="fg">
+            <label for="etype">Enquiry Type</label>
+            <select id="etype" name="etype">
+              <option value="">Select enquiry type</option>
+              <option>Product Pricing &amp; Availability</option>
+              <option>OEM / Private Label Manufacturing</option>
+              <option>Vendor Registration</option>
+              <option>Technical Specifications</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="message">Message / Requirements *</label>
+            <textarea id="message" name="message" placeholder="Describe your requirement — product type, quantity, sizes, delivery location, timeline..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Submit Enquiry &rarr;</button>
+          <p style="font-family:var(--f-body);font-size:.76rem;color:var(--g400);margin-top:.75rem;line-height:1.5;">
+            <!-- To activate this form: add action="https://formspree.io/f/YOUR_FORM_ID" to the form tag above after signing up at formspree.io, or connect to your backend. -->
+            Your enquiry will be responded to within 1 business day.
+          </p>
+        </form>
+      </div>
 
-</div>
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ====================================================
+     FOOTER
+==================================================== -->
 <footer>
-<p>© 2026 Graspello Enterprises | All Rights Reserved</p>
+  <div class="foot-grid">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <!-- Replace with: <img src="logo.png" alt="Graspello Enterprises"> -->
+        <div class="foot-brand-name"><span>G.</span> Graspello Enterprises</div>
+        <p>Authorised Channel & Distribution Partner for M.M. Traders — IS 694 Licensed OEM Manufacturer of PVC Insulated Copper Wires. BIS License 8700194217.</p>
+      </div>
+      <div>
+        <div class="foot-col-ttl">Products</div>
+        <ul class="foot-links">
+          <li><a href="#products">PVC Insulated Wires</a></li>
+          <li><a href="#products">Single Core Wires</a></li>
+          <li><a href="#products">Multicore Wires</a></li>
+          <li><a href="#products">FR Wires</a></li>
+          <li><a href="#products">FRLS Wires</a></li>
+          <li><a href="#oem">OEM Manufacturing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-ttl">Company</div>
+        <ul class="foot-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#oem">OEM Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#quality">Quality &amp; Compliance</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-ttl">Get in Touch</div>
+        <div class="foot-ci"><a href="tel:+918882847378">+91 8882847378</a></div>
+        <div class="foot-ci"><a href="mailto:contact@graspello.com">contact@graspello.com</a></div>
+        <div class="foot-ci">B-35/3, Jhilmil Industrial Area,<br>Shahdara, Delhi – 110095</div>
+        <div style="margin-top:1.2rem;">
+          <div class="foot-col-ttl">Credentials</div>
+          <div class="foot-ci">BIS License No. 8700194217</div>
+          <div class="foot-ci">IS 694 &nbsp;·&nbsp; ISO Certified QMS</div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-copy">&copy; 2025 Graspello Enterprises. All rights reserved.</div>
+      <div class="foot-creds">Authorised Partner &nbsp;&middot;&nbsp; M.M. Traders &nbsp;&middot;&nbsp; IS 694 &nbsp;&middot;&nbsp; BIS 8700194217</div>
+    </div>
+  </div>
 </footer>
 
-<!-- WHATSAPP BUTTON -->
-<div class="whatsapp" onclick="openWhatsApp()">
-💬
-</div>
-
+<!-- ====================================================
+     JAVASCRIPT
+==================================================== -->
 <script>
+// ---- NAV ----
+const nav = document.getElementById('navbar');
+const hbg = document.getElementById('hamburger');
+const mob = document.getElementById('mobMenu');
 
-function scrollToSection(id){
-document.getElementById(id).scrollIntoView({behavior:'smooth'});
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60), { passive: true });
+
+hbg.addEventListener('click', () => {
+  hbg.classList.toggle('open');
+  mob.classList.toggle('open');
+  document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+});
+
+function closeMob() {
+  hbg.classList.remove('open');
+  mob.classList.remove('open');
+  document.body.style.overflow = '';
 }
 
-function openWhatsApp(){
-window.open("https://wa.me/918882847378","_blank");
+document.addEventListener('click', e => {
+  if (!nav.contains(e.target) && !mob.contains(e.target)) closeMob();
+});
+
+// ---- SCROLL REVEAL ----
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// ---- COUNTERS ----
+function animCount(el, target, dur = 1600) {
+  const t0 = performance.now();
+  const tick = now => {
+    const p = Math.min((now - t0) / dur, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(eased * target);
+    if (p < 1) requestAnimationFrame(tick);
+    else el.textContent = target;
+  };
+  requestAnimationFrame(tick);
 }
 
+const cntObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animCount(e.target, +e.target.dataset.target);
+      cntObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.6 });
+
+document.querySelectorAll('.counter').forEach(el => cntObs.observe(el));
+
+// ---- SMOOTH SCROLL ----
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const top = target.getBoundingClientRect().top + scrollY - 72;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+// ---- CONTACT FORM ----
+// TO ACTIVATE: Sign up at formspree.io, add your form ID, and change the form action attribute.
+// Or use EmailJS, your own backend, or any other service.
+document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  // Simulated — replace with actual fetch() to your form handler
+  setTimeout(() => {
+    btn.textContent = 'Enquiry Received — We\'ll be in touch soon!';
+    btn.style.background = 'var(--copper)';
+    this.reset();
+    setTimeout(() => {
+      btn.textContent = 'Submit Enquiry →';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 5000);
+  }, 900);
+});
 </script>
 
 </body>
